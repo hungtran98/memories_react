@@ -1,0 +1,37 @@
+.wrapper {
+    height: var(--default-layout-header-height);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    background-image: linear-gradient(to right, #3b3b4f , #15202b);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--default-layout-width);
+    position: fixed;
+    top: 0;    
+    z-index: 10;
+}
+
+.braind {
+    display: flex;
+    margin-left: 20px;
+}
+
+
+.title {
+    font-size: 2.5rem;
+    color: var(--white)
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-left: 10px;
+}
+
+.username {
+    color: wheat;
+    display: flex;
+    margin-right: 20px;
+}

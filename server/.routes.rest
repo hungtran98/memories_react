@@ -1,0 +1,68 @@
+Get http://localhost:3001/pokemon/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRoYW5oaHVuZ2xhdHVpIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY2MTA2Njc1NCwiZXhwIjoxNjYxMDY2Nzg0fQ.EQVynZn4qbckXKWWG4OBv4To2Fp5mf0EH-blotEU8wk
+
+###
+
+POST http://localhost:3001/pokemon/store
+Content-Type: application/json
+
+{
+    "name": "Fushigidane 4",
+    "image": "https://vn.portal-pokemon.com/play/resources/pokedex/img/pm/cf47f9fac4ed3037ff2a8ea83204e32aff8fb5f3.png",
+    "type": ["62f79a857dc098331ab45706", "62f79a857dc098331ab45707"],
+    "height": 70,
+    "weight": 7,
+    "desc": "Fushigidane desc"
+}
+
+###
+GET http://localhost:3001/pokemon/dsdsd
+
+### ----------auth
+### register
+POST http://localhost:3001/register
+Content-Type: application/json
+
+{
+    "username": "thanhhunglatui",
+    "password": "111111"
+
+}
+### login
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+   "username": "thanhhunglatui",
+    "password": "111111"
+}
+
+
+### get all posts###
+GET http://localhost:3001/posts/
+
+
+### create new post
+POST http://localhost:3001/posts/
+Content-Type: application/json
+
+{
+    "title": "new post 1"
+    , "createtor": "david beckham"
+    , "desc": "just desc"
+    , "image": "https://i.pinimg.com/564x/8f/cd/51/8fcd517758c5ba76e9ceb65f9e5a5345.jpg"
+
+}
+###  update a post
+PUT http://localhost:3001/posts/62f9dd46daebb131967d0deb
+Content-Type: application/json
+
+{
+    "title": "new post 6"
+    , "createtor": "david beckham"
+    , "desc": "just desc"
+    , "image": "https://i.pinimg.com/564x/8f/cd/51/8fcd517758c5ba76e9ceb65f9e5a5345.jpg"
+
+}
+### delete a post 
+DELETE http://localhost:3001/posts/62f9ddac72829b2011acc2d4

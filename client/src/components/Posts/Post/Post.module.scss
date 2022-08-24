@@ -1,0 +1,92 @@
+.wrapper {
+    width: 270px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px 0 0 15px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--white);
+}
+
+.overlay2 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--white);
+    padding: 0 0 4px 0;
+
+    .btnmore {
+        font-size: 2rem;
+        background-color: transparent;
+        color: #fff;
+    }
+
+}
+
+.moment {
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+.cardimage {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cardbody {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: auto;
+    // background-color: orange;
+}
+.cardtitle {
+    padding: 6px 0;
+    color: var(--text-color)
+}
+.carddesc {
+    padding-bottom: 6px;
+    color: var(--text-color);
+    font-weight: 300;
+    text-align: justify;
+}
+.cardaction {
+    width: 85%;
+    // background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+
+.btnaction {
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #d94452;
+    font-weight: bold;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    .icon {
+        margin-right: 4px;
+    }
+}
+

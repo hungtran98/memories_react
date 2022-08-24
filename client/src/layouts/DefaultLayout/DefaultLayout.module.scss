@@ -1,0 +1,32 @@
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5f6f7;
+    
+    
+}
+.container {
+    display: flex;
+    width: var(--default-layout-width);
+    min-height: 1000px;
+    padding-top: 60px;
+    // background-image: url('https://i.pinimg.com/564x/7d/f5/83/7df58328a591c0990d8b2d4fd546c947.jpg');
+    // object-fit: cover;
+}
+.content {
+    flex: 2;
+    //background-color: var(--primary);
+    // border-left: 2px solid #fff;
+    // border-right: 2px solid #fff;
+    margin-right: 2px;
+    
+}
+.sidebar {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    
+
+}
